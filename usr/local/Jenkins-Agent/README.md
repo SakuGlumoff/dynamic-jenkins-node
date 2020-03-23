@@ -20,6 +20,6 @@ wget -O /usr/local/Jenkins-Agent/Jenking-Agent.jar https://<your Jenkins host>/j
 
 Finally, download the encrypted `slave-agent.jnlp` file from the host.
 ```bash
-curl -o slave-agent.jnlp -X GET "https://<your Jenkins host>/computer/<name of the node>/slave-agent.jnlp?encrypted=true"
+curl -o slave-agent.jnlp -X GET "https://<your Jenkins host>/computer/<name of the node>/slave-agent.jnlp?encrypt=true"
 ```
 
