@@ -13,17 +13,18 @@ are:
   * Java 8 or higher (depending on current [Jenkins version recommendations][])
   * More than 512 Mb of RAM (depending of your usage of the nore)
   * Some hard drive space (depending on your usage of course)
+  * Latest version of *curl* and *wget*
 
 ## Jenkins configuration
 
 For all of this to work, you need to have your Jenkins host confiured in such a way that it allows
 machines on the internet/intranet to connect to the host using a specific port.
-To accomplsh that, go to *Manage Jenkins�* -> *Confgiure Global Security* and in there, you should
+To accomplsh that, go to *Manage Jenkins* -> *Confgiure Global Security* and in there, you should
 find a section called *Agents*. Set the *TCP port for inbbound agents* to *Fixed* and set the value to a port you have opened in your firewall settings for inbound traffic of nodes to the host.
 For example, I am using the Amazon Web Services EC2-platform and in there, I have an inbound rule
 for the host server to accept all traffic to port `2000`. And so, I set my fixed port to `2000`.
 
-## NAdding a dynamic node to the host's agent pool
+## Adding a dynamic node to the host's agent pool
 
 Firstly, you need to create and new node on the host dashboard and proceed with the guidelines
 spread out in the [Jenkins Agent settings][].
@@ -35,7 +36,7 @@ When the controller is done, all we have to do is create a custom service with o
 [Jenkins Agent service settings][].
 
 Now, we should reboot our device and see that it has indeed made a connection to the node we created
-on the Jenkins host dashboard. If everything went like in the Str�ömsö, then the agent should be
+on the Jenkins host dashboard. If everything went like in the Strömsö, then the agent should be
 shown as connected and ready to execute commands.
 
 ---

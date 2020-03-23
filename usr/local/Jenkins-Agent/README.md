@@ -7,7 +7,7 @@ mkdir -p /usr/local/Jenkins-Agent
 
 Create a node on the Jenkins host with the launch method set as *Launch agent by connecting it to
 the master*, configure it, and press *Save*. Go to the create node's status page by clicking on it,
-and copy the *secret* shown to this directory.
+copy the *secret* shown into the file `secret-file` in this directory.
 ```bash
 echo <secret> > secret-file
 ```
