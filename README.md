@@ -19,8 +19,8 @@ are:
 
 For all of this to work, you need to have your Jenkins host confiured in such a way that it allows
 machines on the internet/intranet to connect to the host using a specific port.
-To accomplsh that, go to *Manage Jenkins* -> *Confgiure Global Security* and in there, you should
-find a section called *Agents*. Set the *TCP port for inbbound agents* to *Fixed* and set the value to a port you have opened in your firewall settings for inbound traffic of nodes to the host.
+To accomplish that, go to *Manage Jenkins* -> *Confgiure Global Security* and in there, you should
+find a section called *Agents*. Set the *TCP port for inbound agents* to *Fixed* and set the value to a port you have opened in your firewall settings for inbound traffic of nodes to the host.
 For example, I am using the Amazon Web Services EC2-platform and in there, I have an inbound rule
 for the host server to accept all traffic to port `2000`. And so, I set my fixed port to `2000`.
 
