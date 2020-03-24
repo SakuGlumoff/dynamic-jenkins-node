@@ -8,10 +8,10 @@ For these cases, this repository serves as an example of how to set up a *dynami
 
 ## Node requirements
 
-Now, the requirements for making all this work aren'tvery difficult. All your node needs to run
+Now, the requirements for making all this work aren't very difficult. All your node needs to run
 are:
   * Java 8 or higher (depending on current [Jenkins version recommendations][])
-  * More than 512 Mb of RAM (depending of your usage of the nore)
+  * More than 512 Mb of RAM (depending of your usage of the node)
   * Some hard drive space (depending on your usage of course)
   * Latest version of *curl* and *wget*
 
